@@ -12,7 +12,13 @@
             Movies Recommended for you
         </th>
     </tr>
-    {%  for row in  %}
+    {%  for row in finalArr %}
+        <tr>
+        <td>
+            {{ row }}
+        </td>
+        </tr>
+    {% endfor %}
 </table>
 </body>
 </html>

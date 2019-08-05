@@ -59,12 +59,14 @@ def recommend():
 
     ## Step 8: Print titles of first 10 movies
     i = 0
+    finalList = []
     for element in sorted_similar_movies:
         print(get_title_from_index(element[0]))
+        finalList.append(get_title_from_index(element[0]))
         i = i + 1
         if i > 10:
             break
-    return "Yeah this works"
+    return render_template('results.html', finalArr=finalList)
 
 if __name__ == '__main__':
     app.run()
