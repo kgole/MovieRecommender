@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommender Home</title>
+</head>
+
+<body>
+<div style="width: auto; margin-top: 100px;">
+		<div style="text-align: center;">
+			<h1 style="font-weight: bold; margin-top: 50px; font-style: italic;">Content based Movie Recommender</h1>
+            <h2>This simple movie recommender works on the content based recommender system using scikit-learn. <br>
+            Enter a movie that you think is closest to the kind of movie you want recommended.</h2>
+		</div>
+		<div style="text-align: center;">
+		<form action="/recommend" method="post" enctype="multipart/form-data">
+            <table align="center">
+                <tr>
+					    <td>
+						    Movie Name:-
+					    </td>
+					    <td>
+						    <input type="text" name="movie_name" placeholder="here">
+					    </td>
+                </tr>
+                </table>
+            <button style="margin-top: 20px; width: auto;" type="submit">Submit</button>
+        </form>
+        </div>
+</div>
+</body>
+</html>
