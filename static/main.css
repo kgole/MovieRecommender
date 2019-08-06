@@ -19,6 +19,16 @@ input[type=submit] {
   cursor: pointer;
 }
 
+input[type=submit]:hover {
+  background-color: #38403c;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 #recos {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
