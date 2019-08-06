@@ -16,6 +16,7 @@ def recommend():
     if request.method=='POST':
         movie_user_likes1 = request.form['movie_name']
         movie_user_likes = movie_user_likes1.title()
+        #print(movie_user_likes)
 
     def get_title_from_index(index):
         return df[df.index == index]["title"].values[0]

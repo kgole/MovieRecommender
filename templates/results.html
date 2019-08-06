@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Results Page</title>
+    <link href="./static/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<table>
-    <tr>
-        <th>
-            Movies Recommended for you
-        </th>
+<table id="recos">
+    <tr><th>Recommendations</th>
     </tr>
     {%  for row in finalArr %}
         <tr>
