@@ -8,4 +8,4 @@ Optimization target (so far):
 2. Fetching Movie information from TMDB API (https://www.themoviedb.org/documentation/api). 
 
 D'Oh:
-1. Algorithm fails if input movie name isn't correctly stylized and title case(d). (suggestions?)
+1. Algorithm fails if input movie name isn't correctly stylized and title case(d). (Need suggestions!)
