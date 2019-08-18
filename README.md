@@ -9,3 +9,6 @@ Optimization target (so far):
 
 D'Oh:
 1. Algorithm fails if input movie name isn't correctly stylized and title case(d). (Need suggestions!)
+
+
+update (08/16/2019) => Implemented OPtimization Target 1 using : JQuery Autocomplete (https://jqueryui.com/autocomplete/)
