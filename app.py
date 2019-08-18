@@ -37,7 +37,7 @@ def recommend():
         try:
             return row['keywords'] + " " + row['cast'] + " " + row["genres"] + " " + row["director"]
         except:
-            print ("Error:", row)
+            print("Error:", row)
 
     df["combined_features"] = df.apply(combine_features, axis=1)
 
@@ -65,7 +65,7 @@ def recommend():
         print(get_title_from_index(element[0]))
         finalList.append(get_title_from_index(element[0]))
         i = i + 1
-        if i > 10:
+        if i > 20:
             break
     return render_template('results.html', finalArr=finalList)
 

@@ -4,7 +4,34 @@
     <meta charset="UTF-8">
     <title>Movie Recommender Home</title>
     <link href="./static/main.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
+
+<script>
+    $(document).ready(function() {
+  $.ajax({
+    type: "GET",
+    url: "./static/movietitles.csv",
+    dataType: "text",
+    success: function(data) {processData(data);}
+ });
+});
+
+var a = [];
+function processData(myTxt) {
+    var myLines = myTxt.split(/\r\n|\n/);
+    for (var i=1; i<myLines.length; i++) {
+          a.push(myLines[i]);
+        }
+        console.log(a);
+        $( "#movie_name" ).autocomplete({
+            source: a
+        });
+}
+</script>
+
 
 <body>
 <div>
@@ -16,7 +43,8 @@
 		<div style="text-align: center;">
 		<form action="/recommend" method="post" enctype="multipart/form-data">
             <label for="movie name">Movie Name </label>
-            <input type="text" id="fname" name="movie_name" placeholder="Here">
+            <input type="text" id="movie_name" name="movie_name" placeholder="Here">
+            <div class="dropdown" id="output"></div>
             <input type="submit" value="Submit">
         </form>
         </div>
